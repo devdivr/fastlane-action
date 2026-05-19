@@ -1,3 +1,18 @@
+### fastlane-action with Node 24
+```
+- uses: actions/checkout@v6
+- uses: ruby/setup-ruby@v1
+  with:
+    ruby-version: '3.4'
+    bundler-cache: true
+- uses: devdivr/fastlane-action@v3.2.0
+  with:
+    lane: 'beta'
+    options: '{ "option1": "value1", "option2": "value2" }'
+```
+
+
+
 # GitHub Action: Fastlane
 
 [![Actions Status](https://github.com/maierj/fastlane-action-test/workflows/Fastlane%20action%20test/badge.svg)](https://github.com/maierj/fastlane-action-test/actions)
